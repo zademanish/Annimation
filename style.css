@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#workingarea{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    position: relative;
+}
+#nav{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#nav img{
+    height: 60px;
+}
+#nleft a{
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#nleft , #nright{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+#nright a{
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#hero{
+    position: absolute;
+    left: 0;
+    transform: translate(0%,-50%);
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#heroleft{
+    min-width: 50%;
+}
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    font-family: Kajiro;
+    margin-top: 2vw;
+}
+#heroleft .elm{
+    height: 7vw;
+    position: relative;
+    overflow:hidden
+}
+#heroleft .elm h1:nth-child(1){
+    top: 0;
+
+}
+#heroleft .elm h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family:Kajiro;
+    color: #fff;
+    font-weight:100;
+    font-size: 9vw;    
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: #fff;
+}
+#heroright p{
+    font-weight: 300;
+    text-align: right;
+    font-size: 14px;
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://images.unsplash.com/photo-1598815000898-7d8cd4dc90f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80);
+    background-size: cover;
+    background-position: center;
+    
+}
+#heroright p:nth-child(3){
+    margin-bottom: 60px;
+}
